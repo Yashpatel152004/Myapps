@@ -9,102 +9,197 @@
     border-radius: 2px;
 }
 
-.apps {
+.app {
     width: 100%;
     height: 100%;
-    padding: 1rem 0.1rem;
+    padding: 0rem 0.1rem;
     margin-top: 75px;
-
 }
 
 .app-header {
     margin-top: 2rem;
     display: flex;
-
-
 }
 
 .app-header h2 {
     width: 100%;
-
     color: rgb(0, 0, 0);
 }
-.app-container{
+
+.app-container {
     width: 100%;
-    
+    height: 190px;
+    background-image: linear-gradient(45deg, rgb(165, 42, 42), rgb(255, 153, 0));
+    border-radius: 0.5rem;
+    display: block;
+    overflow-y: scroll;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    scroll-behavior: smooth;
+    margin-top: 1%;
+    padding: 1px;
+    display: flex;
 }
+
+.app-container a {
+    text-decoration: none;
+}
+
 .app-container .app-box {
     width: 100px;
-    height: 150px;
+    height: 180px;
     display: flex;
     display: block;
     align-items: center;
     overflow: hidden;
-    margin-top: 1rem;
-    
-    background-color: rgb(0, 0, 0);
-    background-image: linear-gradient(45deg,red,orange);
-    border-radius: 4px;
+    margin: 0.8rem;
+    /* background-color: rgba(0, 0, 0, 0.781); */
     /* border: 4px solid orange; */
-    
 }
 
 .app-container .app-box .app-img img {
     max-width: 100%;
     height: auto;
-   
-    
+    border-radius: 15px;
 }
 
 .app-container .app-box .app-img {
-    width: 100px;
+    max-width: 100%;
     height: 100px;
-     margin: auto;
     display: flex;
+    border-radius: 15px;
     overflow: hidden;
-    border-radius: 1rem;
-
 }
 
-.app-info,
-.app-info i {
-
+.app-info {
     width: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 1px;
-    grid-row-gap: 0px;
-    font-size: 10px;
-    justify-content: left;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
     text-align: center;
     margin-top: 1px;
     color: orange;
 }
 
-.btn-download{
+.app-info i {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.app-name {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    display: block;
+    color: rgb(255, 153, 0);
+    font-size: 16px;
+    text-align: center;
+    overflow: scroll;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.app-info .rate,
+.app-info .download {
+    color: orange;
+    display: flex;
+    text-align: left;
+    justify-content: start;
+}
+
+.btn-download {
     width: 100%;
     display: flex;
     justify-content: center;
     display: block;
     height: auto;
-    
 }
-.btn-download button{
-    width: 100px;
-    background-color: red;
+
+.btn-download button {
+    width: 100%;
+    background-image: linear-gradient(45deg, red, orange);
     color: white;
     border: none;
     padding: 1%;
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.808);
+    transform: scale(0.95);
+    transition: all 0.5s ease;
 }
+
+.btn-download button:hover {
+    box-shadow: 0px 0px 4px orangered;
+    transform: scale(0.97);
+    transition: all 0.4s ease-in;
+}
+
 .bx {
     color: rgb(255, 136, 0);
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
 
+.bx-search:active,
+.bx-x:active,
+.bx-menu:checked,
+.bx:active {
+    transform: scale(0) rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+
+footer .copyright {
+
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 @media (max-width:800px) {
     .app-header h2 {
         font-size: 1rem;
+    }
+
+    .app-container .app-box {
+        width: 80px;
+        height: 150px;
+    }
+
+    .app-box .app-name {
+        text-align: center;
+        width: 100%;
+    }
+
+    .app-container .app-box .app-img {
+        max-width: 100%;
+        height: 80px;
+    }
+
+    .app-container .app-box .app-info {
+        width: 80px;
+        margin-top: 4px;
+        font-size: 0.6rem;
+    }
+
+    .app-container .app-box .app-info i {
+        font-size: 0.6rem;
+    }
+
+    .app-container .app-box .app-info .btn-download button {
+        transform: scale(0.8);
+    }
+
+    .app-container .app-box .btn-download button {
+        font-size: 12px;
     }
 }
