@@ -1,3 +1,7 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+    
+}
 .divider {
     width: 5px;
     height: 20;
