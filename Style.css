@@ -22,7 +22,7 @@ body{
   border-radius:5px;
   text-align:center;
 }
-.header-contact ,.header-blog{
+.header-contact h2 ,.header-blog h2{
   color:black;
   margin:1%;
 }
