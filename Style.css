@@ -14,6 +14,29 @@ body{
   min-height: 100vh;
   background-color:#fffffff1;
 }
+/*privacy*/
+body {
+      background: linear-gradient(95deg, #F29E36, #EF4B4B);
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 20px;
+      font-size: 1rem;
+    }
+    h1, h2 {
+      color: white;
+      border-bottom: 2px solid white;
+      fofont-size: 2rem;
+    }
+    section {
+      margin-bottom: 20px;
+      
+    }
+    p{
+            font-size: 14px;
+    }
+     section li{
+            font-size: 12px;
+    }
 .header-contact , .header-blog{
   color:black;
   border-top:2px solid black;
