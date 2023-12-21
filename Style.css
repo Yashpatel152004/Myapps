@@ -13,19 +13,13 @@
 body{
   min-height: 100vh;
   background-color:#fffffff1;
-  color:white;
-}
-/*privacy*/
-body {
-      background: linear-gradient(95deg, #F29E36, #EF4B4B);
-      color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+        
       
       font-size: 1rem;
     }
    section  h1, section h2 {
-      color: white;
-      border-bottom: 2px solid white;
+
+      border-bottom: 2px solid orange;
       fofont-size: 2rem;
     }
     section {
