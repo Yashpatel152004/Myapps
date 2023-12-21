@@ -19,10 +19,10 @@ body {
       background: linear-gradient(95deg, #F29E36, #EF4B4B);
       color: white;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      margin: 20px;
+      
       font-size: 1rem;
     }
-    h1, h2 {
+   section  h1, section h2 {
       color: white;
       border-bottom: 2px solid white;
       fofont-size: 2rem;
